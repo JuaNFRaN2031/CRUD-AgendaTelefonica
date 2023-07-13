@@ -249,8 +249,7 @@
     <div class="container-fluid registerinicio">
         <div class="row">
             <div class="col-md-6 register-left register-left1">
-                <img src="http://www.idaipqroo.org.mx/wp-content/uploads/2018/06/proteccion-de-datos-personales-791x1024.png"
-                    alt="" />
+                <img src="https://cio.com.mx/wp-content/uploads/2021/02/proteccion-de-datos-personales-791x1024-1.png" alt="" />
             </div>
             <div class="col-md-6 register-left">
 
@@ -269,7 +268,7 @@
         <br>
         <nav class="navbar navbar-light">
             <a class="navbar-brand"><img id="icono" class="img-responsive"
-                    src="https://imge.apk.tools/300/d/3/1/com.widesoft.guiatelefonica.png"></a>
+                    src="https://cdn-icons-png.flaticon.com/512/1648/1648294.png"></a>
 
             <ul class="nav flex-column text-center">
                 <li class="nav-item">
