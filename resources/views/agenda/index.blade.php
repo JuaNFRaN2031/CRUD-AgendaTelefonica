@@ -6,8 +6,7 @@
 <div class="container-fluid registerinicio">
     <div class="row">
         <div class="col-md-6 register-left register-left1">
-            <img src="https://cio.com.mx/wp-content/uploads/2021/02/proteccion-de-datos-personales-791x1024-1.png"
-                alt="" style="width: 120px;" />
+            <img src="https://cio.com.mx/wp-content/uploads/2021/02/proteccion-de-datos-personales-791x1024-1.png" alt="" style="width: 120px;" />
         </div>
         <div class="col-md-6 register-left">
 
@@ -25,8 +24,7 @@
 
     <br>
     <nav class="navbar navbar-light">
-        <a class="navbar-brand"><img id="icono" class="img-responsive"
-                src="https://cdn.icon-icons.com/icons2/403/PNG/512/phonebook_40497.png" style="width: 70px;"></a>
+        <a class="navbar-brand"><img id="icono" class="img-responsive" src="https://cdn.icon-icons.com/icons2/403/PNG/512/phonebook_40497.png" style="width: 70px;"></a>
 
         <ul class="nav flex-column text-center">
             <li class="nav-item">
@@ -53,7 +51,7 @@
 
     <br>
     <div class="row float-right">
-        <a class="btn btn-info btncolorblanco"><i class="fas fa-user-plus"></i> Agregar un nuevo Registro</a>
+        <a href="{{ route('agenda.create') }}" class="btn btn-info btncolorblanco"><i class="fas fa-user-plus"></i> Agregar un nuevo Registro</a>
     </div>
     <br>
     <table class="table-responsive table text-center">
@@ -291,6 +289,6 @@
 </div>
 
 
-@include('plantilla.footer', ['container'=>'container-fluid'])
+@include('plantilla.footer', ['container' => 'container-fluid'])
 
 @endsection
