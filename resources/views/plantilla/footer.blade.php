@@ -3,7 +3,7 @@
 <footer>
 
     <section class="footers border  pt-5 pb-3">
-        <div class="container-fluid pt-5">
+        <div class="{{ $container }} pt-5">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 footers-one ">
                     <div class="footers-logo">
@@ -71,7 +71,7 @@
         </div>
     </section>
     <section class="disclaimer  border">
-        <div class="container-fluid">
+        <div class="{{ $container }}">
             <div class="row ">
                 <div class="col-md-12 py-2">
                     <small>
