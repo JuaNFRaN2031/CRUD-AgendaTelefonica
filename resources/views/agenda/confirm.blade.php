@@ -1,0 +1,3 @@
+@extends('plantilla.plantilla')
+
+{{ $Agenda }}

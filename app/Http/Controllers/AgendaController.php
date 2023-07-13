@@ -96,4 +96,9 @@ class AgendaController extends Controller
     {
         //
     }
+    public function confirm($id)
+    {
+        $Agenda = Agenda::findOrFail($id);
+        return view('agenda.confirm', compact('Agenda'));
+    }
 }
