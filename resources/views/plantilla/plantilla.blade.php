@@ -249,7 +249,8 @@
     <div class="container-fluid registerinicio">
         <div class="row">
             <div class="col-md-6 register-left register-left1">
-                <img src="https://cio.com.mx/wp-content/uploads/2021/02/proteccion-de-datos-personales-791x1024-1.png" alt="" />
+                <img src="https://cio.com.mx/wp-content/uploads/2021/02/proteccion-de-datos-personales-791x1024-1.png"
+                    alt="" />
             </div>
             <div class="col-md-6 register-left">
 
@@ -268,7 +269,7 @@
         <br>
         <nav class="navbar navbar-light">
             <a class="navbar-brand"><img id="icono" class="img-responsive"
-                    src="https://cdn-icons-png.flaticon.com/512/1648/1648294.png"></a>
+                    src="https://cdn.icon-icons.com/icons2/403/PNG/512/phonebook_40497.png"></a>
 
             <ul class="nav flex-column text-center">
                 <li class="nav-item">
@@ -543,9 +544,8 @@
                     <div class="col-xs-12 col-sm-6 col-md-4 footers-one ">
                         <div class="footers-logo">
                             <img class="img-responsive"
-                                src="https://imge.apk.tools/300/d/3/1/com.widesoft.guiatelefonica.png"
-                                style="width: 50px;
-">
+                                src="https://cdn.icon-icons.com/icons2/403/PNG/512/phonebook_40497.png"
+                                style="width: 50px;">
 
                         </div>
                         <div class="footers-info mt-3">
