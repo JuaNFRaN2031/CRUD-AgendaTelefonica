@@ -15,6 +15,16 @@ class CreateAgendasTable extends Migration
     {
         Schema::create('agendas', function (Blueprint $table) {
             $table->id();
+            $table->string('nombres', 50);
+            $table->string('apellidos', 50);
+            $table->string('telefono', 20);
+            $table->string('celular', 20);
+            $table->char('sexo', 9);
+            $table->string('email', 50);
+            $table->string('posicion', 100);
+            $table->string('departamento', 100);
+            $table->decimal('salario', 10, 2);
+            $table->date('fechadenacimiento');
             $table->timestamps();
         });
     }
