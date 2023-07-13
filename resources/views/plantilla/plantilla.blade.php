@@ -250,7 +250,7 @@
         <div class="row">
             <div class="col-md-6 register-left register-left1">
                 <img src="https://cio.com.mx/wp-content/uploads/2021/02/proteccion-de-datos-personales-791x1024-1.png"
-                    alt="" />
+                    alt="" style="width: 120px;" />
             </div>
             <div class="col-md-6 register-left">
 
@@ -269,7 +269,7 @@
         <br>
         <nav class="navbar navbar-light">
             <a class="navbar-brand"><img id="icono" class="img-responsive"
-                    src="https://cdn.icon-icons.com/icons2/403/PNG/512/phonebook_40497.png"></a>
+                    src="https://cdn.icon-icons.com/icons2/403/PNG/512/phonebook_40497.png" style="width: 70px;"></a>
 
             <ul class="nav flex-column text-center">
                 <li class="nav-item">
