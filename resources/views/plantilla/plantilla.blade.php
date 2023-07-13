@@ -16,8 +16,8 @@
     <style type="text/css">
         .registerinicio {
             /*background: -webkit-linear-gradient(left, #3931af, #00c6ff);
-    background: -webkit-linear-gradient(left, #020110, #00c6ff);
-    background: -webkit-linear-gradient(left,#293437, #00c6ff);*/
+            background: -webkit-linear-gradient(left, #020110, #00c6ff);
+            background: -webkit-linear-gradient(left,#293437, #00c6ff);*/
             background: -webkit-linear-gradient(left, #3f7483, #0dc9ff);
             margin-top: 3%;
             /*padding: 3%; */
@@ -25,8 +25,8 @@
 
         .register {
             /*background: -webkit-linear-gradient(left, #3931af, #00c6ff);
-    background: -webkit-linear-gradient(left, #020110, #00c6ff);
-    background: -webkit-linear-gradient(left,#293437, #00c6ff);*/
+            background: -webkit-linear-gradient(left, #020110, #00c6ff);
+            background: -webkit-linear-gradient(left,#293437, #00c6ff);*/
             background: -webkit-linear-gradient(left, #3f7483, #0dc9ff);
             /*margin-top: 3%;*/
             padding: 3%;
