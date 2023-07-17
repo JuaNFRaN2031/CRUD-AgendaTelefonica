@@ -49,7 +49,7 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                            <h3 class="register-heading">Editar Registro</h3>
+                            <h3 class="register-heading">Mostrar Registro</h3>
 
                             <div class="row register-form">
 
@@ -61,7 +61,8 @@
                                                 <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
                                             </div>
                                             <input type="text" class="form-control" id="nombres" name="nombres"
-                                                placeholder="Nombres" required="" value="{{ $Agenda->nombres }}">
+                                                placeholder="Nombres" required="" value="{{ $Agenda->nombres }}"
+                                                disabled="true">
                                         </div>
                                     </div>
 
@@ -72,7 +73,8 @@
                                                 </div>
                                             </div>
                                             <input type="text" class="form-control" id="apellidos" name="apellidos"
-                                                placeholder="Apellidos" required="" value="{{ $Agenda->apellidos }}">
+                                                placeholder="Apellidos" required="" value="{{ $Agenda->apellidos }}"
+                                                disabled="true">
                                         </div>
                                     </div>
 
@@ -83,7 +85,7 @@
                                             </div>
                                             <input class="form-control" type="number" name="telefono"
                                                 placeholder="Telefono: 999 99 99 99" id="telefono"
-                                                value="{{ $Agenda->telefono }}">
+                                                value="{{ $Agenda->telefono }}" disabled="true">
                                         </div>
                                     </div>
 
@@ -95,7 +97,7 @@
                                             </div>
                                             <input class="form-control" type="number" name="celular"
                                                 placeholder="Celular: 699 99 99 99" id="Celular"
-                                                value="{{ $Agenda->celular }}">
+                                                value="{{ $Agenda->celular }}" disabled="true">
                                         </div>
                                     </div>
 
@@ -110,11 +112,13 @@
                                     <div class="form-group">
                                         <div class="maxl">
                                             <label class="radio inline">
-                                                <input type="radio" name="sexo" value="Masculino" {{ $hombre }}>
+                                                <input type="radio" name="sexo" value="Masculino" {{ $hombre }}
+                                                    disabled="true">
                                                 <span> Masculino </span>
                                             </label>
                                             <label class="radio inline">
-                                                <input type="radio" name="sexo" value="Femenino" {{ $mujer }}>
+                                                <input type="radio" name="sexo" value="Femenino" {{ $mujer }}
+                                                    disabled="true">
                                                 <span>Femenino </span>
                                             </label>
                                         </div>
@@ -128,7 +132,7 @@
                                                 <div class="input-group-text"><i class="fa  fa-at text-info"></i></div>
                                             </div>
                                             <input type="email" name="email" class="form-control"
-                                                placeholder="Email" value="{{ $Agenda->email }}" />
+                                                placeholder="Email" value="{{ $Agenda->email }}" disabled="true" />
                                         </div>
                                     </div>
 
@@ -139,7 +143,7 @@
                                                 </div>
                                             </div>
                                             <input type="text" name="posicion" class="form-control"
-                                                placeholder="Posición" value="{{ $Agenda->posicion }}" />
+                                                placeholder="Posición" value="{{ $Agenda->posicion }}" disabled="true" />
                                         </div>
                                     </div>
 
@@ -153,7 +157,7 @@
 
                                             @php($departamentos = ['Gerencia de TI', 'Auditoria TI', 'Contabilidad'])
 
-                                            <select name="departamento" class="form-control">
+                                            <select name="departamento" class="form-control" disabled="true">
                                                 <option class="hidden" selected disabled>Departamento</option>
                                                 @foreach ($departamentos as $dep)
                                                     <option @if ($Agenda->departamento == $dep) selected @endif>
@@ -170,7 +174,8 @@
                                                 </div>
                                             </div>
                                             <input type="number" class="form-control" name="salario"
-                                                placeholder="Salario *" value="{{ $Agenda->salario }}" />
+                                                placeholder="Salario *" value="{{ $Agenda->salario }}"
+                                                disabled="true" />
                                         </div>
                                     </div>
 
@@ -184,13 +189,15 @@
 
                                             <input type="date" name="fechadenacimiento" id="fechadenacimiento"
                                                 min="1000-01-01" max="3000-12-31" class="form-control"
-                                                value="{{ $Agenda->fechadenacimiento }}">
+                                                value="{{ $Agenda->fechadenacimiento }}" disabled="true">
                                         </div>
                                     </div>
 
 
-                                    <button type="submit" class="redondo btn btn-info"><i class="fas fa-save"></i>
-                                        Guardar</button>
+                                    <a href="{{ route('agenda.edit', $Agenda->id) }}"
+                                        class="redondo btn btn-success btncolorblanco">
+                                        <i class="fa fa-edit"></i> Editar
+                                    </a>
                                     <a href="{{ route('cancelar') }}" class="redondo btn btn-danger"><i
                                             class="fas fa-ban"></i>
                                         Cancelar</a>

@@ -95,7 +95,8 @@
                 @foreach ($Agenda as $Agendaitem)
                     <tr>
                         <th scope="row">{{ $Agendaitem->id }}</th>
-                        <td>{{ $Agendaitem->nombres }} {{ $Agendaitem->apellidos }}</td>
+                        <td><a href="{{ route('agenda.show', $Agendaitem->id) }}">{{ $Agendaitem->nombres }}
+                                {{ $Agendaitem->apellidos }}</a></td>
                         <td>{{ $Agendaitem->telefono }}</td>
                         <td>{{ $Agendaitem->celular }}</td>
                         <td>{{ $Agendaitem->sexo }}</td>

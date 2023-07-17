@@ -60,7 +60,8 @@ class AgendaController extends Controller
      */
     public function show($id)
     {
-        //
+        $Agenda = Agenda::findOrFail($id);
+        return view('agenda.show', compact('Agenda'));
     }
 
     /**
