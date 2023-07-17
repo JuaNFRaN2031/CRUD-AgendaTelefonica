@@ -94,23 +94,23 @@
             </thead>
             <tbody>
 
-                @foreach ($Agenda as $AgendaItem)
+                @foreach ($Agenda as $Agendaitem)
                     <tr>
-                        <th scope="row">{{ $AgendaItem->id }}</th>
-                        <td>{{ $AgendaItem->nombres }} {{ $AgendaItem->apellidos }}</td>
-                        <td>{{ $AgendaItem->telefono }}</td>
-                        <td>{{ $AgendaItem->celular }}</td>
-                        <td>{{ $AgendaItem->sexo }}</td>
-                        <td>{{ $AgendaItem->email }}</td>
-                        <td>{{ $AgendaItem->posicion }}</td>
-                        <td>{{ $AgendaItem->departamento }}</td>
-                        <td>{{ $AgendaItem->salario }}</td>
-                        <td>{{ $AgendaItem->fechadenacimiento }}</td>
+                        <th scope="row">{{ $Agendaitem->id }}</th>
+                        <td>{{ $Agendaitem->nombres }} {{ $Agendaitem->apellidos }}</td>
+                        <td>{{ $Agendaitem->telefono }}</td>
+                        <td>{{ $Agendaitem->celular }}</td>
+                        <td>{{ $Agendaitem->sexo }}</td>
+                        <td>{{ $Agendaitem->email }}</td>
+                        <td>{{ $Agendaitem->posicion }}</td>
+                        <td>{{ $Agendaitem->departamento }}</td>
+                        <td>{{ $Agendaitem->salario }}</td>
+                        <td>{{ $Agendaitem->fechadenacimiento }}</td>
                         <td><a class="btn btn-success btncolorblanco">
                                 <i class="fa fa-edit"></i> Editar
                             </a>
 
-                            <a class="btn btn-danger btncolorblanco">
+                            <a href="{{ route('agenda.confirm', $Agendaitem->id) }}" class="btn btn-danger btncolorblanco">
                                 <i class="fa fa-trash-alt"></i> Eliminar
                             </a>
                         </td>
