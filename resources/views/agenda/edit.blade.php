@@ -31,8 +31,6 @@
         </nav>
     </div>
 
-    {{ $Agenda }}
-
     <form method="POST" action="{{ route('agenda.update', $Agenda->id) }}">
         @method('PUT')
         @csrf
