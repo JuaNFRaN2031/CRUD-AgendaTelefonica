@@ -104,7 +104,7 @@
                         <td>{{ $Agendaitem->departamento }}</td>
                         <td>{{ $Agendaitem->salario }}</td>
                         <td>{{ $Agendaitem->fechadenacimiento }}</td>
-                        <td><a class="btn btn-success btncolorblanco">
+                        <td><a href="{{ route('agenda.edit', $Agendaitem->id) }}" class="btn btn-success btncolorblanco">
                                 <i class="fa fa-edit"></i> Editar
                             </a>
 

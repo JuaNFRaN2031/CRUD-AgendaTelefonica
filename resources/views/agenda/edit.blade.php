@@ -1,6 +1,6 @@
 @extends('plantilla.plantilla')
 
-@section('titulo', 'Crear nuevo registro')
+@section('titulo', 'Editar registro')
 
 
 @section('contenido')
@@ -31,7 +31,10 @@
         </nav>
     </div>
 
-    <form method="POST" action="{{ route('agenda.store') }}">
+    {{ $Agenda }}
+
+    <form method="POST" action="{{ route('agenda.update', $Agenda->id) }}">
+        @method('PUT')
         @csrf
         <div class="container register">
 
@@ -48,7 +51,7 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                            <h3 class="register-heading">Crear nuevo Registro</h3>
+                            <h3 class="register-heading">Editar Registro</h3>
 
                             <div class="row register-form">
 
@@ -60,7 +63,7 @@
                                                 <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
                                             </div>
                                             <input type="text" class="form-control" id="nombres" name="nombres"
-                                                placeholder="Nombres" required="">
+                                                placeholder="Nombres" required="" value="{{ $Agenda->nombres }}">
                                         </div>
                                     </div>
 
@@ -71,7 +74,7 @@
                                                 </div>
                                             </div>
                                             <input type="text" class="form-control" id="apellidos" name="apellidos"
-                                                placeholder="Apellidos" required="">
+                                                placeholder="Apellidos" required="" value="{{ $Agenda->apellidos }}">
                                         </div>
                                     </div>
 
@@ -81,7 +84,8 @@
                                                 <div class="input-group-text"><i class="fa fa-phone text-info"></i></div>
                                             </div>
                                             <input class="form-control" type="number" name="telefono"
-                                                placeholder="Telefono: 999 99 99 99" id="telefono">
+                                                placeholder="Telefono: 999 99 99 99" id="telefono"
+                                                value="{{ $Agenda->telefono }}">
                                         </div>
                                     </div>
 
@@ -92,18 +96,27 @@
                                                 </div>
                                             </div>
                                             <input class="form-control" type="number" name="celular"
-                                                placeholder="Celular: 699 99 99 99" id="Celular">
+                                                placeholder="Celular: 699 99 99 99" id="Celular"
+                                                value="{{ $Agenda->celular }}">
                                         </div>
                                     </div>
+
+                                    @if ($Agenda->sexo == 'Masculino')
+                                        @php($hombre = 'checked')
+                                        @php($mujer = '')
+                                    @else
+                                        @php($hombre = '')
+                                        @php($mujer = 'checked')
+                                    @endif
 
                                     <div class="form-group">
                                         <div class="maxl">
                                             <label class="radio inline">
-                                                <input type="radio" name="sexo" value="Masculino" checked>
+                                                <input type="radio" name="sexo" value="Masculino" {{ $hombre }}>
                                                 <span> Masculino </span>
                                             </label>
                                             <label class="radio inline">
-                                                <input type="radio" name="sexo" value="Femenino">
+                                                <input type="radio" name="sexo" value="Femenino" {{ $mujer }}>
                                                 <span>Femenino </span>
                                             </label>
                                         </div>
@@ -116,8 +129,8 @@
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text"><i class="fa  fa-at text-info"></i></div>
                                             </div>
-                                            <input type="email" name="email" class="form-control" placeholder="Email"
-                                                value="" />
+                                            <input type="email" name="email" class="form-control"
+                                                placeholder="Email" value="{{ $Agenda->email }}" />
                                         </div>
                                     </div>
 
@@ -128,7 +141,7 @@
                                                 </div>
                                             </div>
                                             <input type="text" name="posicion" class="form-control"
-                                                placeholder="Posición" value="" />
+                                                placeholder="Posición" value="{{ $Agenda->posicion }}" />
                                         </div>
                                     </div>
 
@@ -139,11 +152,15 @@
                                                         class="fa fa-map-marker-alt text-info"></i>
                                                 </div>
                                             </div>
+
+                                            @php($departamentos = ['Gerencia de TI', 'Auditoria TI', 'Contabilidad'])
+
                                             <select name="departamento" class="form-control">
                                                 <option class="hidden" selected disabled>Departamento</option>
-                                                <option>Gerencia de TI</option>
-                                                <option>Auditoria TI</option>
-                                                <option>Contabilidad</option>
+                                                @foreach ($departamentos as $dep)
+                                                    <option @if ($Agenda->departamento == $dep) selected @endif>
+                                                        {{ $dep }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -155,7 +172,7 @@
                                                 </div>
                                             </div>
                                             <input type="number" class="form-control" name="salario"
-                                                placeholder="Salario *" value="" />
+                                                placeholder="Salario *" value="{{ $Agenda->salario }}" />
                                         </div>
                                     </div>
 
@@ -168,7 +185,8 @@
                                             </div>
 
                                             <input type="date" name="fechadenacimiento" id="fechadenacimiento"
-                                                min="1000-01-01" max="3000-12-31" class="form-control">
+                                                min="1000-01-01" max="3000-12-31" class="form-control"
+                                                value="{{ $Agenda->fechadenacimiento }}">
                                         </div>
                                     </div>
 
