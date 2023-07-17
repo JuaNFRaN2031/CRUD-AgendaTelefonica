@@ -73,8 +73,6 @@
         </div>
         <br>
 
-        {{ $Agenda }}
-
         <table class="table-responsive table text-center">
             <thead>
                 <tr>
@@ -120,6 +118,8 @@
 
             </tbody>
         </table>
+
+        {{ $Agenda->links() }}
 
     </div>
 
