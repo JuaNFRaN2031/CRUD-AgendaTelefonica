@@ -49,10 +49,16 @@
 
         <nav class="navbar navbar-light float-right">
             <form class="form-inline">
+                <select name="tipo" id="exampleFormControlSelect1" class="form-control mr-sm-2">
+                    <option>Buscar por tipo</option>
+                    <option>Nombres</option>
+                    <option>Apellidos</option>
+                    <option>Telefono</option>
+                    <option>Celular</option>
+                    <option>Email</option>
+                </select>
                 <input name="buscarpor" type="search" class="form-control mr-sm-2" placeholder="Buscar por "
                     aria-label="Search">
-                <input name="buscarporapellido" type="search" class="form-control mr-sm-2"
-                    placeholder="Buscar por apellido" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0">Buscar</button>
             </form>
         </nav>

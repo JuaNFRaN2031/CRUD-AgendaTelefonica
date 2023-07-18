@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Agenda extends Model
 {
     use HasFactory;
-    public function scopeNombres($query, $nombres)
+    /*public function scopeNombres($query, $nombres)
     {
         if ($nombres) {
             return $query->where('nombres', 'like', "%$nombres%");
@@ -18,6 +18,12 @@ class Agenda extends Model
     {
         if ($apellidos) {
             return $query->where('apellidos', 'like', "%$apellidos%");
+        }
+    }*/
+    public function scopeBuscarpor($query, $tipo, $buscar)
+    {
+        if (($tipo) && ($buscar)) {
+            return $query->where($tipo, 'like', "%$buscar%");
         }
     }
 }
