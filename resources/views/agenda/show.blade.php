@@ -186,9 +186,9 @@
                                         class="redondo btn btn-success btncolorblanco">
                                         <i class="fa fa-edit"></i> Editar
                                     </a>
-                                    <a href="{{ route('cancelar') }}" class="redondo btn btn-danger"><i
-                                            class="fas fa-ban"></i>
-                                        Cancelar</a>
+                                    <a href="{{ route('agenda.index') }}" class="redondo btn btn-info"><i
+                                            class="	fas fa-reply"></i>
+                                        Volver</a>
                                 </div>
                             </div>
                         </div>
