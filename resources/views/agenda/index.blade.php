@@ -3,6 +3,7 @@
 @section('titulo', 'Agenda')
 
 @section('contenido')
+
     <div class="container-fluid registerinicio">
         <div class="row">
             <div class="col-md-6 register-left register-left1">
@@ -10,15 +11,11 @@
                     alt="" style="width: 120px;" />
             </div>
             <div class="col-md-6 register-left">
-
                 <h3>Bienvenid@</h3>
                 <p>Por favor llena los datos correctamente en el sistema!</p>
-
             </div>
         </div>
     </div>
-
-
 
     <div class="container-fluid ">
 
@@ -77,7 +74,6 @@
                     <th scope="col">Salario</th>
                     <th scope="col">Fecha de nacimiento</th>
                     <th scope="col">Acción</th>
-
                 </tr>
             </thead>
             <tbody>
