@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Menu Home Agenda') }}
+                    <div class="card-header">{{ __('Home Agenda Telefónica') }}
 
                     </div>
                     <div class="card-body">
@@ -15,7 +15,7 @@
                             </div>
                         @endif
                         {{ __('Ya estás logeado. Hola') }} {{ Auth::user()->name }}{{ __('!') }}
-                        <a href="{{ route('agenda.index') }}" class="btn btn-outline-dark">Agenda</a>
+                        <a href="{{ route('agenda.index') }}" class="btn btn-outline-dark">Agenda Telefónica</a>
                     </div>
                 </div>
             </div>

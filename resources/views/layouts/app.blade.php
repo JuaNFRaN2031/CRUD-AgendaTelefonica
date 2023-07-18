@@ -19,6 +19,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    @extends('plantilla.plantilla')
+
 </head>
 
 <body>
@@ -81,6 +84,7 @@
             @yield('content')
         </main>
     </div>
+    @include('plantilla.footer', ['container' => 'container-fluid'])
 </body>
 
 </html>
