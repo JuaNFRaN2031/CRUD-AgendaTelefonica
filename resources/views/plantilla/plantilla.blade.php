@@ -24,7 +24,7 @@
             background: -webkit-linear-gradient(left,#293437, #00c6ff);*/
             background: -webkit-linear-gradient(left, #3f7483, #0dc9ff);
             margin-top: 3%;
-            /*padding: 3%; */
+            /*padding: 3%;*/
         }
 
         .register {
@@ -150,12 +150,9 @@
             color: #495057;
         }
 
-
         .register .register-form .form-control {
             /* border-radius: 1rem;*/
         }
-
-
 
         .register-left1 img {
             margin-top: 0;
@@ -164,18 +161,18 @@
 
         }
 
-
         .btncolorblanco {
             color: white !important;
             margin: 1px;
         }
 
-
         .container-fluid {
             width: 90% !important;
         }
 
-
+        .container-fluid-75 {
+            width: 75% !important;
+        }
 
         .fa {
             width: 20px;
@@ -189,8 +186,6 @@
             background-color: #0f8bf41a;
             font-family: 'Underdog', cursive;
         }
-
-
 
         footer {
             left: 0px;
@@ -235,8 +230,6 @@
         .breadcrumb {
             background-color: #e9ecef00;
         }
-
-
 
         #icono {
             width: 20%;
