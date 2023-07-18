@@ -15,6 +15,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <a href="{{ route('agenda.index') }}" class="btn-right">Agenda</a>
                 </div>
             </div>
         </div>
