@@ -14,7 +14,7 @@
                             </div>
                         @endif
 
-                        {{ __('Ya estás logeado. Bienvenido') }} {{ Auth::user()->name }}{{ __('!') }}
+                        {{ __('Ya estás logeado. Hola') }} {{ Auth::user()->name }}{{ __('!') }}
                         <a href="{{ route('agenda.index') }}" class="btn btn-outline-dark">Agenda</a>
                     </div>
                 </div>

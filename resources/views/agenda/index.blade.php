@@ -22,7 +22,6 @@
 
     <div class="container-fluid ">
 
-
         @if (session('datos'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('datos') }}
@@ -30,6 +29,7 @@
                         aria-hidden="true">&times;</span></button>
             </div>
         @endif
+
         @if (session('cancelar'))
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 {{ session('cancelar') }}
@@ -51,13 +51,16 @@
         </nav>
 
         <br>
+
         <h1 class="text-center">Datos personales</h1>
 
         <br>
+
         <div class="row float-right">
             <a href="{{ route('agenda.create') }}" class="btn btn-info btncolorblanco"><i class="fas fa-user-plus"></i>
                 Agregar un nuevo Registro</a>
         </div>
+
         <br>
 
         <table class="table-responsive table text-center">
@@ -78,7 +81,6 @@
                 </tr>
             </thead>
             <tbody>
-
                 @foreach ($Agenda as $Agendaitem)
                     <tr>
                         <th scope="row">{{ $Agendaitem->id }}</th>
@@ -95,22 +97,18 @@
                         <td><a href="{{ route('agenda.edit', $Agendaitem->id) }}" class="btn btn-success btncolorblanco">
                                 <i class="fa fa-edit"></i> Editar
                             </a>
-
                             <a href="{{ route('agenda.confirm', $Agendaitem->id) }}" class="btn btn-danger btncolorblanco">
                                 <i class="fa fa-trash-alt"></i> Eliminar
                             </a>
                         </td>
-
                     </tr>
                 @endforeach
-
             </tbody>
         </table>
 
         {{ $Agenda->links() }}
 
     </div>
-
 
     @include('plantilla.footer', ['container' => 'container-fluid'])
 
