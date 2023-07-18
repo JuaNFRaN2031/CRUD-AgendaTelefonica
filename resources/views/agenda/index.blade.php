@@ -89,7 +89,7 @@
                         <td>{{ $Agendaitem->posicion }}</td>
                         <td>{{ $Agendaitem->departamento }}</td>
                         <td>{{ $Agendaitem->salario }}</td>
-                        <td>{{ $Agendaitem->fechadenacimiento }}</td>
+                        <td>{{ date('d-m-Y', strtotime($Agendaitem->fechadenacimiento)) }}</td>
                         <td><a href="{{ route('agenda.edit', $Agendaitem->id) }}" class="btn btn-success btncolorblanco">
                                 <i class="fa fa-edit"></i> Editar
                             </a>
