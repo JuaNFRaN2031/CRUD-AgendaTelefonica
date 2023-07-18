@@ -19,7 +19,8 @@
         }
 
         body {
-            margin: 0
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
         }
 
         a {
@@ -397,11 +398,8 @@
         }
     </style>
 
-    <style>
-        body {
-            font-family: 'Nunito', sans-serif;
-        }
-    </style>
+    @extends('plantilla.plantilla')
+
 </head>
 
 <body class="antialiased">
