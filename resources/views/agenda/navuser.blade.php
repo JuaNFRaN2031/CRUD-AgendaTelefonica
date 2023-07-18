@@ -4,7 +4,7 @@
 
     <ul class="nav flex-column text-center">
         <li class="nav-item">
-            <span class="nav-link active">Bienvenido {{ Auth::user()->name }}</span>
+            <span class="nav-link active">Bienvenid@ {{ Auth::user()->name }}</span>
         </li>
         <li class="nav-item">
             <a class="dropdown-item" href="{{ route('logout') }}"

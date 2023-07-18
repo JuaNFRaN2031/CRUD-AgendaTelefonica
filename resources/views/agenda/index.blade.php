@@ -47,7 +47,17 @@
             </ol>
         </nav>
 
-        <br>
+        <nav class="navbar navbar-light float-right">
+            <form class="form-inline">
+                <input name="buscarpor" type="search" class="form-control mr-sm-2" placeholder="Buscar por "
+                    aria-label="Search">
+                <input name="buscarporapellido" type="search" class="form-control mr-sm-2"
+                    placeholder="Buscar por apellido" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0">Buscar</button>
+            </form>
+        </nav>
+
+        <br><br><br>
 
         <h1 class="text-center">Datos personales</h1>
 
