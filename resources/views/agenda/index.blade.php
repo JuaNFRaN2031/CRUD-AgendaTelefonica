@@ -50,14 +50,14 @@
         <nav class="navbar navbar-light float-right">
             <form class="form-inline">
                 <select name="tipo" id="exampleFormControlSelect1" class="form-control mr-sm-2">
-                    <option>Buscar por tipo</option>
-                    <option>Nombres</option>
-                    <option>Apellidos</option>
-                    <option>Telefono</option>
-                    <option>Celular</option>
-                    <option>Email</option>
+                    <option value="">Buscar por tipo</option>
+                    <option value="Nombres">Nombres</option>
+                    <option value="Apellidos">Apellidos</option>
+                    <option value="Telefono">Telefono</option>
+                    <option value="Celular">Celular</option>
+                    <option value="Email">Email</option>
                 </select>
-                <input name="buscarpor" type="search" class="form-control mr-sm-2" placeholder="Buscar por "
+                <input name="buscarpor" type="search" class="form-control mr-sm-2" placeholder="Buscar "
                     aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0">Buscar</button>
             </form>
@@ -121,6 +121,20 @@
         {{ $Agenda->links() }}
 
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        document.getElementById('exampleFormControlSelect1').onchange = function() {
+            var selectedOption = this.value;
+            var inputField = document.querySelector('input[name="buscarpor"]');
+            if (selectedOption !== '') {
+                inputField.placeholder = "Buscar por " + selectedOption.toLowerCase();
+            } else {
+                inputField.placeholder = "Buscar";
+            }
+        };
+    </script>
 
     @include('plantilla.footer', ['container' => 'container-fluid'])
 
