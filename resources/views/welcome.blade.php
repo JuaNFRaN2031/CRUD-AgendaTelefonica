@@ -429,7 +429,7 @@
                 </div>
                 <div class="col-md-6 register-left">
                     <h3>Bienvenid@</h3>
-                    <p>Por favor llena los datos correctamente en el sistema!</p>
+                    <p>Este es el portal inicial de la agenda telefónica!</p>
                 </div>
             </div>
         </div>

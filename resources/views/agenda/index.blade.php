@@ -12,7 +12,7 @@
             </div>
             <div class="col-md-6 register-left">
                 <h3>Bienvenid@</h3>
-                <p>Por favor llena los datos correctamente en el sistema!</p>
+                <p>Esta es tu agenda personal!</p>
             </div>
         </div>
     </div>

@@ -29,7 +29,7 @@
                     <img src="https://cio.com.mx/wp-content/uploads/2021/02/proteccion-de-datos-personales-791x1024-1.png"
                         alt="" />
                     <h3>Bienvenid@</h3>
-                    <p>Por favor llena los datos correctamente en el sistema!</p>
+                    <p>Aquí podrás visualizar el registro!</p>
 
                 </div>
                 <div class="col-md-9 register-right">
